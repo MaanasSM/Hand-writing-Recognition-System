@@ -17,14 +17,19 @@ multimodal extensions in future development.
 
 1. To fine-tune a pre-trained TrOCR (Transformer-based Optical Character Recognition) model on the 
 IAM handwriting dataset to enhance its performance on handwritten English text. 
+
 2. To evaluate the fine-tuned model using relevant performance metrics such as training/validation loss 
 and accuracy to ensure effective learning and generalization. 
+
 3. To optimize the training process by addressing challenges such as memory limitations, mixed precision 
 training, and gradient accumulation on a local machine. 
+
 4. To develop a lightweight and user-friendly frontend application that includes a digital canvas for users 
 to input handwritten text. 
+
 5. To integrate the trained handwriting recognition model with the frontend interface to enable real-time 
 conversion of handwritten strokes to digital text. 
+
 6. To ensure the seamless transition of a machine learning model from a research/training environment to 
 a production-ready application.
 
@@ -32,18 +37,22 @@ a production-ready application.
 
 **DATASET** 
 
-For this project, we used the IAM Handwriting Dataset hosted on Kaggle under the repository 
-“changheonkim/iam-trocr”. This dataset is a curated version specifically formatted for use with the 
+For this project, we used the **IAM Handwriting Dataset** hosted on Kaggle under the repository 
+“**changheonkim/iam-trocr**”. This dataset is a curated version specifically formatted for use with the 
 TrOCR model. 
-It contains: 
+
+It contains:
+
 ● 2915 handwritten text line images in total. 
+
 ● A metadata file named gt_test.txt that serves as the annotation file. 
+
 The gt_test.txt file maps each image file name to its corresponding ground truth transcription using 
 tab-separated values. Each entry in the file is structured as: 
 filename text 
+
 This structure enables easy loading of paired image-text data for training and evaluation of handwriting 
 recognition models. 
-
 
 
 **MODEL ARCHITECTURE**
